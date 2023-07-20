@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produit.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"  href="../style.css">
+    <title>Produits</title>
+</head>
+<body>
+<header>
+    <nav>
+        <h2 class="logo">DFK</h2>
+        <ul class="menu">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../magasin/magasin.html">Magasin</a></li>
+            <li><a href="../produit/produit.html">Produits</a></li>
+        </ul>
+        <button type="submit" class="btn-haut">Inscription</button>
+    </nav>
+    <img class="menuBurger" src="../images/burger.png" alt="un menu burger">
+    
+    <script>
+        const menuBurger = document.querySelector(".menuBurger")
+        const menu = document.querySelector(".menu")
+
+     menuBurger.addEventListener('click',()=>{
+        menu.classList.toggle('mobileMenu')
+        })
+    </script> 
+</header>
+<section>
+    <section class="rectangle">
+        <h1>ADM Ryzen 5 5500</h1>
+        <h3>6 coeurs, 12 threads, 3.60 GHz, 16 Mo, socket AM4, 65 Watts, version avec le ventilateur</h3>
+    </section>
+    
+    <section class="info">
+        <img src="../images/processeur.png" alt="processeur" class="processeur">
+        <div class="contentPrincipal">
+        <div class="content">Le processeur AMD Ryzen 5 5500 profite des améliorations<br>
+        apportées par l'architecture AMD Zen 3. Performances<br>
+        énergétiques revues à la hausse, fréquences plus élevées, cache<br>
+        L3 unifié par blocs de 16 Mo et un processeur qui perpétue la<br>
+        tradition AMD Ryzen d'excellence en termes de haute<br>
+        performance par watt : voici un sérieux nombre d'arguments<br>
+        pour le faire rejoindre votre future configuration PC gamer !
+        </div>
+        <div class="content1">
+            <p>129$95</p>
+            <p>Dispo web :<br>
+                EN STOCK</p>
+        </div>
+        <input type="button" value="Ajouter au panier" class="button">
+        </div>
+    </section>
+</section>
+<footer>
+    <div class="reseaux">
+    <i class='bx bxl-twitter'><a href="#">Twitter </a></i>
+    <i class='bx bxl-instagram-alt' ><a href="#">Instagram</a></i>
+    <i class='bx bxl-facebook-circle' ><a href="#">Facebook</a></i>
+    </div>
+    <div class="adresse">
+        <p>L'adresse du magasin <br>
+           123 rue du commerce <br>
+           NULPARTVILLE
+        </p>
+    </div>
+    <ul class="collabs">
+        <li>Nos transporteur</li>
+        <li>Nos banque</li> 
+    </ul>
+    
+    
+    
+    <a class="btn-bas" href="../contact/contact.html" type="submit">Contact</a>
+</footer>
+
+  
+</body>
+</html>

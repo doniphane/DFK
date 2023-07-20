@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="magasin.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>magasin</title>
+</head>
+<body>
+<header>
+    <nav>
+        <h2 class="logo">DFK</h2>
+        <ul class="menu">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../magasin/magasin.html">Magasin</a></li>
+            <li><a href="../produit/produit.html">Produits</a></li>
+        </ul>
+        <button type="submit" class="btn-haut">Inscription</button>
+    </nav>
+    <img class="menuBurger" src="../images/burger.png" alt="un menu burger">
+    
+    <script>
+        const menuBurger = document.querySelector(".menuBurger")
+        const menu = document.querySelector(".menu")
+
+     menuBurger.addEventListener('click',()=>{
+        menu.classList.toggle('mobileMenu')
+        })
+    </script> 
+</header>
+ <section class="page">
+
+<div class="retancle-gris"></div>
+<div class="menu-2">
+    <i class='bx bx-package'>Tout les produit</i>
+    <i class='bx bxs-purchase-tag'>Top vente</i>
+    <i class='bx bxs-offer'>Promo</i>
+    <i class='bx bx-category-alt'>Catégorie</i>
+    <span>&#9868;Catégorie</span>
+</div>
+
+<!--cartte produition -->
+
+
+<div class="card-container">
+  <div class="card-block">
+    <div class="card">
+      <img src="../images/1.jpeg" alt="Image 1">
+      <h3>Ryzen 5</h3>
+      <p>5 coeur 15 thread</p>
+      <div class="Prix">
+      </i> <p>129.95$</p>
+        <div class="color-prix"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/2.jpg" alt="Image 2">
+      <h3>Trident Z G.SkILL</h3>
+      <p>2600 Mhz.</p>
+      <div class="Prix">
+        <p>180$</p>
+        <div class="color-prix"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/3.jpeg" alt="Image 3">
+      <h3>Maximus Formula 5</h3>
+      <div class="Prix">
+        <p>190$</p>
+        <div class="color-prix"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/4.jpg" alt="Image 4">
+      <h3>RTX 2080 super</h3>
+      <p>8GO.</p>
+      <div class="Prix">
+        <p>130$</p>
+        <div class="color-prix"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-block">
+    <div class="card">
+      <img src="../images/1.jpeg" alt="Image 5">
+      <h3>Rizen 5</h3>
+      <p>5 coeur 15 thread.</p>
+      <div class="Prix">
+        <p>129.95$</p>
+        <div class="color-prix"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/2.jpg" alt="Image 6">
+      <h3>Trident Z G.SkILL</h3>
+      <p>2600 Mhz.</p>
+      <div class="Prix">
+        <p>130$</p>
+        <div class="color-prix"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/3.jpeg" alt="Image 7">
+      <h3>Maximus Formula 5</h3>
+      <p></p>
+      <div class="Prix">
+        <p>190$</p>
+        <div class="color-prix"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/5.jpg" alt="Image 8">
+      <h3>Corsair HX1000I</h3>
+      <p>1000 Watt.</p>
+      <div class="Prix">
+        <p>110$</p>
+        <div class="color-prix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+<!--Fin carte -->
+
+<footer>
+    <div class="reseaux">
+    <i class='bx bxl-twitter'><a href="#">Twitter </a></i>
+    <i class='bx bxl-instagram-alt' ><a href="#">Instagram</a></i>
+    <i class='bx bxl-facebook-circle' ><a href="#">Facebook</a></i>
+    </div>
+    <div class="adresse">
+        <p>L'adresse du magasin <br>
+           123 rue du commerce <br>
+           NULPARTVILLE
+        </p>
+    </div>
+    <ul class="collabs">
+        <li>Nos transporteur</li>
+        <li>Nos banque</li> 
+    </ul>
+    
+    
+    
+    <a class="btn-bas" href="../contact/contact.html" type="submit">Contact</a>
+</footer>
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Accueil</title>
+</head>
+<body>
+<header>
+    <nav>
+        <h2 class="logo">DFK</h2>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="magasin/magasin.html">Magasin</a></li>
+            <li><a href="produit/produit.html">Produits</a></li>
+        </ul>
+        <button type="submit" class="btn-haut">Inscription</button>
+
+        <h2 class="VOUS">VOUS<br>n'etes <br>pas<br>afk</h2>
+
+    </nav>
+    
+    <img class="menuBurger" src="images/burger.png" alt="un menu burger">
+    
+    <script>
+        const menuBurger = document.querySelector(".menuBurger")
+        const menu = document.querySelector(".menu")
+
+     menuBurger.addEventListener('click',()=>{
+        menu.classList.toggle('mobileMenu')
+        })
+    </script>
+</header>
+    
+
+    <div class="conteneurParent">
+        <div class="container1">
+            <p class="textPresentation">Bienvenu sur DFK <br>
+            le meilleur des produits techs parce que <br>
+            VOUS n’êtes pas AFK <br><br>
+            </p>
+            <div>
+                <input class="search" type="search" placeholder="un CPU ? une carte graphique? une tour?">
+                <span><i class='bx bx-search-alt-2'></i></span>
+            </div>
+            
+        </div>
+        
+        <div class="caroussel">
+        <div class="slider">
+
+            <div class="card">
+                <img class="promo4" src="images/4.jpg" alt="Image 5">
+                <h3>RTX 2080  -  130$</h3>
+                <p ><a class="commande" href="produit/produit.html">commandez la votre</a></p>
+            </div>
+
+
+            <div  class="card">
+                <img class="promo4" src="images/4.jpg" alt="Image 5">
+                <h3>RTX 2080  -  130$</h3>
+                <p ><a class="commande" href="produit/produit.html">commandez la votre</a></p>
+            </div>
+            <div class="card">
+                <img class="promo4" src="images/4.jpg" alt="Image 5">
+                <h3>RTX 2080  -  130$</h3>
+                <p ><a class="commande" href="produit/produit.html">commandez la votre</a></p>
+            </div>
+            <div class="card">
+                <img class="promo4" src="images/4.jpg" alt="Image 5">
+                <h3>RTX 2080  -  130$</h3>
+                <p ><a class="commande" href="produit/produit.html">commandez la votre</a></p>
+            </div>
+            <div class="card">
+                <img class="promo4" src="images/4.jpg" alt="Image 5">
+                <h3>RTX 2080  -  130$</h3>
+                <p ><a class="commande" href="produit/produit.html">commandez la votre</a></p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="reseaux">
+    <i class='bx bxl-twitter'><a href="#">Twitter </a></i>
+    <i class='bx bxl-instagram-alt' ><a href="#">Instagram</a></i>
+    <i class='bx bxl-facebook-circle' ><a href="#">Facebook</a></i>
+    </div>
+    <div class="adresse">
+        <p>L'adresse du magasin <br>
+           123 rue du commerce <br>
+           NULPARTVILLE
+        </p>
+    </div>
+    <ul class="collabs">
+        <li>Nos transporteur</li>
+        <li>Nos banque</li> 
+    </ul> 
+    <a class="btn-bas" href="contact/contact.html" type="submit">Contact</a>
+</footer>
+  
+</body>
+</html>

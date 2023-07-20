@@ -1,0 +1,153 @@
+
+  h1 {
+    color: #000000;
+    margin-left: 150px;
+  }
+
+  form {
+    max-width: 400px;
+    background-color: #AFB6A1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  input[type="submit"] {
+    background-color: #5EBB7A;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  
+
+  .container{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .droit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+.droit p {
+display: flex;
+text-transform: uppercase;
+
+
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+ 
+  .social a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+  }
+
+  .droit ul li{
+    font-size: 19px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+  }
+ 
+  @media only screen and (max-width: 800px) {
+    .droit p {
+     display: none;
+        }
+
+   .droit  {
+    display: none;
+            }
+
+ form {
+  max-height: 70vh;
+    margin: 0 auto;
+    background-color: #AFB6A1;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #000000;
+    font-size: 6vw;
+    display: flex;
+    text-align: center;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 1vw;
+    box-sizing: border-box;
+    margin-bottom: 1vw;
+    font-size: 3vw;
+  }
+
+  textarea {
+    height: 15vw;
+  }
+
+  input[type="submit"] {
+    background-color: #5EBB7A;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1vw;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  }

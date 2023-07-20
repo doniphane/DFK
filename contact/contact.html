@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style.css">
+    <title>contact</title>
+</head>
+<body>
+<header>
+    <nav>
+        <h2 class="logo">DFK</h2>
+        <ul class="menu">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../magasin/magasin.html">Magasin</a></li>
+            <li><a href="../produit/produit.html">Produits</a></li>
+        </ul>
+        <button type="submit" class="btn-haut">Inscription</button>
+    </nav>
+    <img class="menuBurger" src="../images/burger.png" alt="un menu burger">
+    
+    <script>
+        const menuBurger = document.querySelector(".menuBurger")
+        const menu = document.querySelector(".menu")
+
+     menuBurger.addEventListener('click',()=>{
+        menu.classList.toggle('mobileMenu')
+        })
+    </script> 
+</header>
+
+<!--Formulaire -->
+<h1>Contactez-nous</h1>
+
+<section class="container">
+  <form class="formulaire" action="/envoyer-message" method="POST">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom"  placeholder="Votre Prénom" required>
+
+    <label for="email">Adresse e-mail :</label>
+    <input type="email" id="email" name="email" placeholder="Votre Email"  required>
+
+    <label for="objet">Objet :</label>
+    <input type="text" id="objet" name="objet" placeholder="Votre objet" required>
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+
+    <input type="submit" value="Envoyer">
+  </form>
+
+  <section class="droit">
+  <p> L'adresse du magasin : <br> <br>123 rue du commerce <br> <br> Reseaux Sociaux : <br><br></p> 
+
+  <div class="social">
+    <i class='bx bxl-twitter'><a href="https://twitter.com" target="_blank">Twitter </a></i>
+    <i class='bx bxl-instagram-alt' ><a href="https://www.instagram.com" target="_blank">Instagram</a></i>
+    <i class='bx bxl-facebook-circle' ><a href="https://www.facebook.com/" target="_blank">Facebook</a></i>
+    </div>
+    <br>
+    <p>Nos Collaborateur</p>
+    <ul>
+        <br>
+        <li>Nos transpoteur</li>
+        <li>Nos banque</li>
+    </ul>
+</section>
+
+</section>
+
+
+<footer>
+    <div class="reseaux">
+    <i class='bx bxl-twitter'><a href="#">Twitter </a></i>
+    <i class='bx bxl-instagram-alt' ><a href="#">Instagram</a></i>
+    <i class='bx bxl-facebook-circle' ><a href="#">Facebook</a></i>
+    </div>
+    <div class="adresse">
+        <p>L'adresse du magasin <br>
+           123 rue du commerce <br>
+           NULPARTVILLE
+        </p>
+    </div>
+    <ul class="collabs">
+        <li>Nos transporteur</li>
+        <li>Nos banque</li> 
+    </ul>
+    
+    
+    
+    <a class="btn-bas" href="../contact/contact.html" type="submit">Conctat</a>
+</footer>
+
+  
+</body>
+</html>

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: #5EBB7A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header{
+    background:#1F1D1D ;
+    width: 100%;
+    height: 15vh;
+    list-style: none;
+  }
+
+ nav{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    padding-right:10%;
+    height: 100%;
+ }
+
+ .navBar {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .logo{
+    color: #AFB6A1;
+    font-size: 7vw;
+ }
+
+ nav ul li {
+   display: inline-block;
+   margin-right: 3vw;
+   margin-left: 3vw;
+ }
+
+ nav ul li a{
+    color: #AFB6A1;
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: bold;
+ }
+
+.btn-haut{
+   font-size: 2.5vw;
+   height: 8vh;
+   background: #C1C1C1;
+   color: black;
+ }
+
+ footer{
+    background:#1F1D1D ;
+    width: 100vw;
+    height: 5.5rem;
+    color: #C1C1C1;
+    display: flex;
+    font-size: 1.1vw;  
+    display: flex;
+    align-items: center;  
+    justify-content: space-around; 
+ }
+
+.btn-bas{
+   font-size: 2.5vw;
+   height: 5vh;
+   background: #C1C1C1;
+   color: black;
+   text-decoration: none;
+   align-items: center;
+   display: flex;
+ }
+
+ footer i{ 
+   text-decoration: none;
+   list-style: none;
+   display: flex;
+ }
+
+ .collabs {
+   display: flex;
+   flex-direction: column;
+   margin-left: 1vw;
+   margin-right: 4vw;
+ }
+
+ .adresse {
+   margin-left: 1vw;
+   margin-right: 10vw;
+ }
+
+ .reseaux {
+   display: flex;
+   flex-direction: column;
+   margin-left: 0.5vw;
+   margin-right: 10vw ;
+ }
+
+ .reseaux a {
+   color: #C1C1C1;
+   text-decoration: none;
+ }
+
+ .menuBurger {
+  position: absolute;
+  display: none;
+  width: 10vw;
+  top: 16vh;
+  z-index: 4;
+  left: 4vw;
+ }
+
+ @media screen and (max-width: 800px) {
+
+  nav ul li a{
+    color: #AFB6A1;
+    font-size: 10vw;
+ }
+
+  .menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;    
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.6s ease;
+        background-color: #000000ac;
+        border-right: solid 6px black ;
+        z-index: 3;
+  }
+
+  header button {
+    display: none;
+  }
+
+  .menu.mobileMenu {
+    margin-left: 0;
+    z-index: 2;
+}
+
+  .menuBurger {
+    display: block;
+  }
+
+  .logo {
+    font-size: 15vw;
+  }
+
+ }
